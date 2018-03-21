@@ -1,124 +1,148 @@
-﻿<!-- portfolio mobile html version 2018.03.15 -->
+<!-- portfolio mobile html (flex menues) version 18.03.16 -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
 	<title>Web Dev profile</title>
-	<link href="css/mobile.css" rel='stylesheet'>
+	<link href="css/mobile&pad_flex-menu_18.03.21.css" rel='stylesheet'>
 	<link href="https://fonts.googleapis.com/icon?family=Material+Icons|Montserrat|Sanchez|Asap|Oxygen"
       rel="stylesheet">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link rel="shortcut icon" href="images/hayabusaLogo.svg" type="image/svg">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <meta itemprop="name" content="Introduction - Android Wear - Android Wear design guidelines">
     <meta property="og:type" content="article">
     <meta property="og:title" content="Introduction - Android Wear - Android Wear design guidelines">
     <meta itemprop="image" content="https://material-design.storage.googleapis.com/publish/wear_v_1/social.png">
+    <script src='jquery.min.js'></script>
 </head>
 <body>
-	<nav class="menu-list" id="menu_list">
-		<ul>
-			<li class='close_menu'><i class="material-icons">keyboard_arrow_left</i></li>
-			<li class='close_menu'>
-				<a  href="#intro"><h3>responsive mobile / desktop pages on html5 / css3 / js</h3></a></li>
-			<li class='close_menu'>
-				<a href="#skills"><h3>my skills</h3></a>
-			</li>
-			<li class='close_menu'>
-				<a href="#projects"><h3>my projects</h3></a>
-			</li>
-			<li class='close_menu'>
-				<a href="#education">
-					<h3>my education</h3></a>
-			</li>
-			<li class='close_menu'>
-				<a href="#contacts">
-					<h3>My contacts</h3></a>
-			</li>
-		</ul>
-	</nav>
-	<main>
-		<header>
-			<a class="hamburger-button" id="open_menu">
-				<i class="material-icons">menu</i>
+	<header id="fixed_header">
+		<div class="menu-wrapper">
+			<a class="hamburger-button">
+				<i class="material-icons" id="open_menu_button">menu</i>
 			</a>
-			<marquee class="auto-scroll" width="80%"><h1>front end web developer</h1></marquee>
-		</header>
-		<section class="content-list">
-			<article>
-				<h3 class="content-item"><a href="#intro">responsive mobile / desktop pages on html5 / css3 / js</a></h3>
-				<h3 class="content-item"><a href="#skills">my skills</a></h3>
-				<h3 class="content-item"><a href="#projects">my projects</a></h3>
-				<h3 class="content-item"><a href="#education">My education</a></h3>
+			<img class="logo" src="images/hayabusaLogo.svg" alt="my logo">
+			<h1>Web developer</h1>
+		</div>
+		<nav class="menu-list hidden" id="menu_list">
+			<a href="javascript:void(0)" class="nav-big close_button close-menu"><i class="material-icons" id="close_menu_button">close</i></a>
+			<ul id="content_link_list">
+				<li class="close-menu"><a class="content-link" href="#intro">About me</a></li>
+				<li class="close-menu"><a class="content-link" href="#skills">my skills</a></li>
+				<li class="close-menu"><a class="content-link" href="#projects">my projects</a></li>
+				<li class="close-menu"><a class="content-link" href="#education">my education</a></li>
+				<li class="close-menu"><a class="content-link" href="#contacts">My contacts</a></li>
+			</ul>
+		</nav>
+	</header>	
+	<main>
+		<section class="content-1" id="intro">
+			<h2>About me</h2>
+			<h3>My name Nikonov Alex, Im passionate junior in building resposive wesites and web applications</h3>
+			<article class="content-1-wrapper">
+				<div>
+					<h3>I like to create and achive great responsiveness through mobile first design, interaction and optimisation websites</h3>
+					<img src="images/pad_img.svg" alt="mockup elegance">
+				</div>
+				<div>
+					<h3>Not only design but also coding with a power of JavaScript and jQuery allows to reach animation, interection and serving the clients and your bussiness.</h3>
+					<img src="images/mac_img.svg" alt="JS app power">
+				</div>
 			</article>
 		</section>
-		<section class="content-1"><a name="intro"></a>
-			<article>
-				<h2>responsive mobile / desktop pages on html5 / css3 / js</h3>
-				<h3>Accuracy of HTML 5 new markup and elegance of CSS3 effects</h3>
-				<div class="img-wrapper">
-					<img src="images/pad_img.svg" alt="mockup elegance"></div>
-				<h3>Power of JavaScript and jQuery</h3>
-				<div class="img-wrapper"><img src="images/mac_img.svg" alt="JS app power"></div>
-			</article>
-		</section>
-		<section class="content-2"><a name="skills"></a>
+		<section class="content-2" id="skills">
 				<article>
 				<h2>My skills</h2>
-				<p>Coding HTML/ HTML5, CSS/ CSS3, Vanilla JS, jQuery, understanding UX, aquaintance with coloristics and font creating, knowledge of UML and data consolidating, that’s all help me to become a professional web developer.</p>
-				<br>
-				<p>Take a look at greater length :</p>
-				<ul>
-					<li class="dashed">Coding legacy HTML / CSS helps me to develop webpages supporting old browsers and keeping good representation of wanted modern look;</li>
-					<li class="dashed">HTML5 and CSS3 help to get the best adaption, responsibility  and air in modern browsers according to up-to-date business requirements;</li>
-					<li class="dashed">S brings animation and active content to webpages, makes web-apps alive. Also it works with Ajax to allow interection between client-server architecture;</li>
-					<li class="dashed">Object-oriented programming basing on last ES6 standarts helps me become better coder and go with the times;</li>
-					<li class="dashed">jQuery allows to code faster, manipulate and handle DOM elements and Ajax requestes easier across multitude of browsers.</li>
-					<li class="dashed">Prototyping using Photoshop / CorelDraw makes to arrange all elements of user interface to provide better UX at the design stage;</li>
-					<li class="dashed">UML and data consolidation knowledge allow me to name  and define correctly not only application functions, classes and other innter stuff but also describe use cases, extentions, its properties, write technicial requirements and accurately maintain and suppport documentation;</li>
-				</ul>
-				<p>That’s all will help me to become highly qualified front end developer.</p>
+				<div class="content-wrapper">
+					<p>Coding HTML/ HTML5, CSS/ CSS3, Vanilla JS, jQuery, understanding UX, aquaintance with coloristics and font creating, knowledge of UML and data consolidating, that’s all help me to become a professional web developer.</p>
+					<br>
+					<p>Take a look at greater length :</p>
+					<ul>
+						<li class="dashed">Coding legacy HTML / CSS helps me to develop webpages supporting old browsers and keeping good representation of wanted modern look;</li>
+						<li class="dashed">HTML5 and CSS3 help to get the best adaption, responsibility  and air in modern browsers according to up-to-date business requirements;</li>
+						<li class="dashed">CCS3 brings animation and active content to webpages, makes web-apps alive. Also it works with Ajax to allow interection between client-server architecture;</li>
+						<li class="dashed">Object-oriented programming basing on last ES6 standarts helps me become better coder and go with the times;</li>
+						<li class="dashed">jQuery allows to code faster, manipulate and handle DOM elements and Ajax requestes easier across multitude of browsers.</li>
+						<li class="dashed">Prototyping using Photoshop / CorelDraw makes to arrange all elements of user interface to provide better UX at the design stage;</li>
+						<li class="dashed">UML and data consolidation knowledge allow me to name  and define correctly not only application functions, classes and other innter stuff but also describe use cases, extentions, its properties, write technicial requirements and accurately maintain and suppport documentation;</li>
+					</ul>
+					<p class="get-bottom-padding">That’s all will help me to become highly qualified front end developer.</p>
+				</div>
+				<a href='javascript:void(0)' class="read-more">Read more</a>
 			</article>
 		</section>
-		<section class="content-3"><a name="projects"></a>
+		<section class="content-3" id="projects">
+			<h2>my projects</h2>
 			<article>
-				<h2>my projects</h2>
-				<h3>Outdoor Decals landing page</h3>
-				<p><i><strong>Features:</strong></i> landing page written with HTML and CSS, driven to be adaptive for screens with width upto 480px, provides simplicity (no animation, no JavaScript) and  supports old browsers. The page purpose is to inform about new store. 
-					<a href="https://leksorhayabusa.github.io/OutdoorDecals/">
-						<p class="get_bottom_padding">Outdoor Decals landing</p>
-						<img class="hr" src="images/OD.svg" alt="my first landing page">
+				<h3>Brighton-Times news page</h3>
+				<p><i><strong>Features:</strong></i> Brighton-Times news page modified to practice flexbox, layout and responsiveness.
+					<a href="https://leksorhayabusa.github.io/Brighton-Times/">
+						<p class="get-bottom-padding">Brighton-Times news page</p>
+							<img  class="hr bt-news-page" src="images/BT150-1x.jpg"
+								srcset="images/BT600x450-1x.webp 100w,
+								images/BT1200x800-2x.webp 979px,
+								images/BT2000x1300-1x.webp 200px" 
+							 sizes="(max-width:500px) 100vw, (max-width:979px) 40vw,
+							 100vw" 
+							 alt="my first responsive page">
+<!-- 
+						<picture>
+							<source media='' srcset='images/BT600x450-1x.webp'>
+							<source media='(max-width:1279px)' srcset='images/BT1200x800-2x.webp 2x'>
+							<source" media='(min-width:1280px)' srcset='images/BT2000x1300-1x.webp 2x'>
+							
+						</picture> -->
 					</a>
 				</p>
-				<h3>Graphic editor: Pixel Art Maker</h3>
-				<p class="get_bottom_padding"><i><strong>Features</strong></i>: written with HTML5 / CSS3,  JavaScript, jQuery.</p>
-				<p class="get_bottom_padding"><i><strong>Description:</strong></i> Pixel Art Maker (hence PAM) is a web application, easily and inuitively used to create graphics. It’s developed especially within Google-Udacity Nano Degree program for Front End Web Developers to master JS/jQuery events, DOM manipulation, apply styles. </p>
-				<p>App’s specification: </p>
-				<ul>
-					<li>user must be able dynamically create table-canvas size N by M grid;</li>
-					<li>color choice;</li>
-					<li>click a cell in the grid to fill with chosen color;</li>
-					<li>user ability to dynamically extend/shrink canvas rows/columns number;</li>
-					<li>fill cells under the coursor during mouse button is pressed;</li>
-					<li>four step history for any action whether it’s coloring, adding cells or bucket tool.</li>
-				</ul>
-					<a href="https://leksorhayabusa.github.io/project-pixelArtMaker/pixelArtMaker-18.01.04.html">
-						<p class="get_bottom_padding">Pixel Art Maker - graphic web app</p>
-						<img class="hr" src="images/pam.svg" alt="pixel art maker app">
+			</article>
+			<article>
+				<h3>Outdoor Decals landing page</h3>
+				<p><i><strong>Features:</strong></i> landing page written with HTML and CSS, driven to be adaptive for screens with width upto 480px, provides simplicity (no animation, no JavaScript) and  supports old browsers. The page purpose is developed to inform about new store. 
+					<a href="https://leksorhayabusa.github.io/OutdoorDecals/">
+						<p class="get-bottom-padding">Outdoor Decals landing</p>
+						<img class="hr media-size-500" src="images/OD.svg" alt="my first landing page">
+						<source >
 					</a>
+				</p>
+			</article>
+			<article>
+				<h3>Graphic editor: Pixel Art Maker</h3>
+				<div class="content-wrapper">
+					<p class="get-bottom-padding"><i><strong>Features</strong></i>: written with HTML5 / CSS3,  JavaScript, jQuery.</p>
+					<p class="get-bottom-padding"><i><strong>Description:</strong></i> Pixel Art Maker (hence PAM) is a web application, easily and inuitively used to create graphics. It’s developed especially within Google-Udacity Nano Degree program for Front End Web Developers to master JS/jQuery events, DOM manipulation, apply styles. </p>
+					<p>App’s specification: </p>
+					<ul>
+						<li>user must be able dynamically create table-canvas size N by M grid;</li>
+						<li>color choice;</li>
+						<li>click a cell in the grid to fill with chosen color;</li>
+						<li>user ability to dynamically extend/shrink canvas rows/columns number;</li>
+						<li>fill cells under the coursor during mouse button is pressed;</li>
+						<li>four step history for any action whether it’s coloring, adding cells or bucket tool.</li>
+					</ul>
+				</div>
+				<a href='javascript:void(0)' class="read-more">Read more</a>
+				<a href="https://leksorhayabusa.github.io/project-pixelArtMaker/pixelArtMaker-18.01.04.html">
+					<p class="get-bottom-padding">Pixel Art Maker - graphic web app</p>
+					<img class="hr media-size-500" src="images/pam.svg" alt="pixel art maker app">
+				</a>
+			</article>
+			<article>
 				<h3>Online game: 'Football game'</h3>
-				<p class="get_bottom_padding"><i><strong>Features:</strong></i> written with HTML5 / CSS3,  JavaScript, jQuery API, jQuery UI, PeerJS.</p>
-				<p class="get_bottom_padding"><i><strong>Description:</strong></i> ‘football game’ is single page web application allows two players play arkanoid-football in real time on separated PCs or Laptops with screens resolution at least 700x500. In the game we used main connection technology is peer-to-peer for real-time connection.</p>
-				<p>Task list:</p>
-				<ul>
-					<li>create game as first player;</li>
-					<li>connect to first player as second one;</li>
-					<li>disconnect from the game;</li>
-					<li>control player’s goalkeeper;</li>
-					<li>return the ball;</li>
-					<li>send a message in mutual chat</li>
-					<li>observe a received message in the chat</li>
-				</ul>
-				<p class="get_bottom_padding"><i><strong>Goal:</strong></i> Our game is written in purpose to understand and improve our skills in P2P network, HTML5 SVG animations, CSS3 flexbox and use third-party libraries as jQuery UI, Peerjs, jQuery API. To read more click on <a href="https://github.com/LeksorHayabusa/FootballGame/blob/master/fb%20summary.pdf">pdf summary</a></p>
-				<p class="get_bottom_padding"><i><strong>Teamworking:</strong></i> joined efforts together with <a href="https://github.com/Dimas-X">Dimas_X</a> over this game.  </p>
+				<div class="content-wrapper">
+					<p class="get-bottom-padding"><i><strong>Features:</strong></i> written with HTML5 / CSS3,  JavaScript, jQuery API, jQuery UI, PeerJS.</p>
+					<p class="get-bottom-padding"><i><strong>Description:</strong></i> ‘football game’ is single page web application allows two players play arkanoid-football in real time on separated PCs or Laptops with screens resolution at least 700x500. In the game we used main connection technology is peer-to-peer for real-time connection.</p>
+					<p>Task list:</p>
+					<ul>
+						<li>create game as first player;</li>
+						<li>connect to first player as second one;</li>
+						<li>disconnect from the game;</li>
+						<li>control player’s goalkeeper;</li>
+						<li>return the ball;</li>
+						<li>send a message in mutual chat</li>
+						<li>observe a received message in the chat</li>
+					</ul>
+					<p class="get-bottom-padding"><i><strong>Goal:</strong></i> Our game is written in purpose to understand and improve our skills in P2P network, HTML5 SVG animations, CSS3 flexbox and use third-party libraries as jQuery UI, Peerjs, jQuery API. To read more click on <a href="https://github.com/LeksorHayabusa/FootballGame/blob/master/fb%20summary.pdf">pdf summary</a></p>
+				<p class="get-bottom-padding"><i><strong>Teamworking:</strong></i> joined efforts together with <i>Dimas_X</i> over this game.  </p>
 				<p><i><strong>My responsibilities in  this project:</strong></i></p>
 				<ul>
 					<li>developing and expanding an idea of real-time game and it’s structure and architecture;</li>
@@ -128,78 +152,147 @@
 		</li>
 					<li>error handling.</li>
 				</ul>
-				<p>Partner's responsibilities:</p>
-				<ul>
-					<li>p2p peer connection;</li>
-					<li>p2p server deploying;</li>
-					<li>game physics</li>
-					<li>setting up ‘jQuery UI ‘ dialog windows;</li>
-					<li>error handling</li>
-				</ul>
+			</div>
+			<a href='javascript:void(0)' class="read-more">Read more</a>
 				<a href="https://leksorhayabusa.github.io/FootballGame/fbgame_beta.html">
-					<p class="get_bottom_padding">Football game</p>
+					<p class="get-bottom-padding">Football game</p>
 				</a>
-				<img class="fb_game" src="images/fb_game.svg" alt="football game">
+				<img class="fb-game-img media-size-500" src="images/fb_game.svg" alt="football game">
 			</article>
 		</section>
-		<section class="content-4"><a name="education"></a>
+		<section class="content-4" id="education">
 			<article>
-				<h2>my education</h2>
-				<h3><i>Recipient Google developer challenge scholarship</i></h3>
-				<p class="term"><i>Current</i></p>
-				<p class="get_bottom_padding">Udacity course: ‘Front-End Developer Nanodegree course’ <a href="https://eu.udacity.com/course/front-end-web-developer-nanodegree--nd001">link</a>. Duration 9 months (not 6 because it's Google Challenge course). Getting skills: advanced HTML5/CSS3, JS, jQuery, JS Testing with Jasmine, BackBone, Angular, Ember frameworks, Google Map API.</p>
-				<h3><i>Discrete and boolean math courses</i></h3>
-				<p class="term"><i>Finished at 2016</i></p>
-				<p class="get_bottom_padding">120 hours fundamentals in discrete and boolean mathematics open lectures and practics in Kharkiv National University of Radio Electronics.</p>
-				<h3><i>Master degree in the field: ‘Consolidated information’</i></h3>
-				<p class="term"><i>Finished at 2015</i></p>
-				<p class="get_bottom_padding">Completed the full course (00092) in Kharkiv National University of Radio Electronics, obtained master degree and qualification of Analyst of Consolidated Information.</p>
-				<h3><i>Bachelor degree in the field: ‘Mechanical Engineering’</i></h3>
-				<p class="term"><i>Finished at 2012</i></p>
-				<p class="get_bottom_padding">Complited the full course in Ukrainian National University ‘Kharkiv Polytechnic Institute’, obtained bachelor degree and qualification of Engineer of Machine Building.</p>
+					<h2>my education</h2>
+				<div class="content-wrapper">
+					<h3><i>Recipient Google developer challenge scholarship</i></h3>
+					<p class="term"><i>Current</i></p>
+					<p class="get-bottom-padding">Udacity course: ‘Front-End Developer Nanodegree course’ <a href="https://eu.udacity.com/course/front-end-web-developer-nanodegree--nd001">link</a>. Duration 9 months (not 6 because it's Google Challenge course). Getting skills: advanced HTML5/CSS3, JS, jQuery, JS Testing with Jasmine, BackBone, Angular, Ember frameworks, Google Map API.</p>
+					<h3><i>Discrete and boolean math courses</i></h3>
+					<p class="term"><i>Finished at 2016</i></p>
+					<p class="get-bottom-padding">120 hours fundamentals in discrete and boolean mathematics open lectures and practics in Kharkiv National University of Radio Electronics.</p>
+					<h3><i>Master degree in the field: ‘Consolidated information’</i></h3>
+					<p class="term"><i>Finished at 2015</i></p>
+					<p class="get-bottom-padding">Completed the full course (00092) in Kharkiv National University of Radio Electronics, obtained master degree and qualification of Analyst of Consolidated Information.</p>
+					<h3><i>Bachelor degree in the field: ‘Mechanical Engineering’</i></h3>
+					<p class="term"><i>Finished at 2012</i></p>
+					<p class="get-bottom-padding">Complited the full course in Ukrainian National University ‘Kharkiv Polytechnic Institute’, obtained bachelor degree and qualification of Engineer of Machine Building.</p>
+				</div>
+				<a href='javascript:void(0)' class="read-more">Read more</a>
 			</article>
 		</section>
-		<footer id="show_footer">
-			<a name="contacts"></a><p>contact / hire me</p>
-		</footer>
 	</main>
-	<nav class="footer-menu hide-footer" id="footer_menu">
+	<footer id="contacts">
+		<a id="footer_button" href='javascript:void(0)'>contact / hire me</a>
+		<nav class="footer-menu" id="footer_menu">
 			<ul>
 				<li><a href="https://github.com/LeksorHayabusa">Github</a></li>
 				<li><a href="https://www.linkedin.com/in/alex-nikonov-083a054b/">LinkedIn</a></li>
 				<li><a href="">UpWork</a></li>
-				<li><p>+48 5766 393 55</p></li>
+				<li><a href="tel:+48576639355">+48 5766 393 55</a></li>
 				<li><a href="mailto:alexmotorniyg@gmail.com">alexmotorniyg@gmail.com</a></li>
 				<li>Location: Gdansk, Poland</li>
 			</ul>
-	</nav>
+		</nav>
+	</footer>
+	
 	<script>
-	/*the hack below: i just doubled this script showing the menues because of absense of free time*/
-	/************** left main menu************/
-		var openMenu = document.querySelector('#open_menu');
-		var closeMenu = document.querySelector('.close_menu');
-		var menuList = document.querySelector('#menu_list');
-		openMenu.addEventListener('click',function(e){
-			menuList.classList.toggle('open-menu-list');
-			e.stopPropagation();
-		});
-		closeMenu.addEventListener('click',function(){
-			menuList.classList.remove('open-menu-list');
+		'use strict';
+	/***************Scroll header line of content menu*****************/
+		
+		var w = $(window);
+        var header = $('#fixed_header');
+    	var headerHeight = $('.menu-wrapper').css('height');
+    	headerHeight = parseInt(headerHeight, 10);
+    	var main = $('main');
+    	var mainHeight = main.css('height');
+    	mainHeight = parseInt(mainHeight, 10);
+		var openMenu = $('#open_menu_button');
+		var closeMenu = $('.close-menu');
+		var menuList = $('#menu_list');
+    	var menuListHeight = menuList.css('height');
+    	menuListHeight = parseInt(menuListHeight, 10);
+		var mainLinks = $('.content-link');
+		var footer = $('#contacts');
+    	var footerHeight = footer.css('height');
+    	footerHeight = parseInt(footerHeight, 10);		
+		var footerButton = $('#footer_button');
+		var footerMenu = $('#footer_menu');
+		var footerButtonHeight = footerButton.css('height');
+		var readMoreButton = $('.read-more');
+	/************************************************************/	
+		w.on('scroll', function(e) {
+            header.addClass('fixed');
+			menuList.addClass('fixed-menu');
+			console.log('top height : ' + menuListHeight);
+			/*footerButton.css({'position':'relative',
+							'top':menuListHeight});*/
+							footer.css({'position':'relative',
+							'top':menuListHeight})
+            if (w.scrollTop()>150) {/*
+            	main.css({'position':'relative'});*/
+				main.animate({
+					top:headerHeight
+				});
+                header.animate({
+                	top:'0'
+                }, 400);
+            } /*else if(w.scrollTop()<150){
+                header.animate({
+                    top:'-50px'
+                }, 400);
+                header.removeClass('fixed');
+            }*/
+        });
+
+	/************** main content menu***********/
+		openMenu.on('click', function(e){
+			menuList.removeClass('hidden');
 		})
-/*************footer contants menu*************/
-		var showFooter = document.querySelector('#show_footer');
-		var closeFooter = document.querySelector('main');
-		var footerMenu = document.querySelector('#footer_menu');
-		showFooter.addEventListener('click',function(e){
-			footerMenu.classList.add('show-footer');
-			footerMenu.classList.remove('hide-footer');
-			e.stopPropagation();
-		});
-		closeFooter.addEventListener('click',function(e){
-			footerMenu.classList.add('hide-footer');
-			footerMenu.classList.remove('show-footer');
-			e.stopPropagation();
+		closeMenu.on('click',function(){
+			menuList.addClass('hidden');
 		})
+			
+	/************** auto scrolling from content menu to certain content ***********/
+		mainLinks.on('click', function(e){
+	/****** testing values ****/
+			e.preventDefault();
+			let target = $(e.currentTarget);
+			let targetAttr = target.attr('href');
+			$('html, body').animate({
+		    	scrollTop: ($(targetAttr).offset().top - headerHeight)
+			}, 1500);
+		})
+/****************read more content************/
+		readMoreButton.on('click', function(e){
+			let target = $(e.currentTarget);
+			let readMoreWrapper = target.prev('.content-wrapper');
+			console.log('readmore pushed');
+			e.preventDefault();
+			readMoreWrapper.removeClass('content-wrapper');
+			console.log(target);
+			target.remove();
+		})
+		
+
+/*************footer contants menu************/
+		footerButton.on('click', function(e){
+			e.preventDefault();
+			footerMenu.addClass('footer-fixed-menu')
+			footerMenu.animate({
+				bottom:'0'			
+			})
+		})
+		main.on('click', function(e){
+			console.log('footer button off');
+			e.preventDefault();
+			footerMenu.animate({
+				bottom:'-100vw'			
+			}, 500);
+			setTimeout(function(){
+				footerMenu.removeClass('footer-fixed-menu');
+			}, 500);
+		})
+		
 	</script>
 </body>
 </html>

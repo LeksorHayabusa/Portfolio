@@ -95,7 +95,6 @@ $(document).ready(function(){
 			})
 		})
 		main.on('click', function(e){
-			e.preventDefault();
 			footerMenu.animate({
 				bottom:'-100vw'			
 			}, 500);

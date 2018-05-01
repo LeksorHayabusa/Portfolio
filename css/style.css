@@ -663,11 +663,6 @@
 		-webkit-background-size: cover;
 		background-size: cover;
 	}
-	.content-3 article:nth-of-type(4) .img-appearance:before{
-		background: url('../images/pam.svg') no-repeat;	
-		-webkit-background-size: 100%;
-		background-size: 100%;
-	}
 	.content-3 article:nth-of-type(5) .img-appearance:before{
 		background: url('../images/fb_game.svg') no-repeat;	
 		-webkit-background-size: 100%;

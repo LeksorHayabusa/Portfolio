@@ -441,7 +441,7 @@
 		-ms-order: 2;
 		-o-order: 2;
 		order: 2;
-		width: 50%;
+		width: 100%;
 		text-align: center;
 	}
 	.content-3 article:nth-of-type(2){
@@ -466,6 +466,14 @@
 		-ms-order: 5;
 		-o-order: 5;
 		order: 5;
+		width: 50%;
+	}
+	.content-3 article:nth-of-type(5){
+		-webkit-order: 6;
+		-moz-order: 6;
+		-ms-order: 6;
+		-o-order: 6;
+		order: 6;
 		width: 50%;
 	}
 	.content-3 .media-img-props{

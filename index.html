@@ -3,14 +3,14 @@
 <html lang="en">
 <head>
 	<!-- Google Analytics -->
-	<!-- Global site tag (gtag.js) - Google Analytics -->
-	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-118897246-1"></script>
 	<script>
-	  window.dataLayer = window.dataLayer || [];
-	  function gtag(){dataLayer.push(arguments);}
-	  gtag('js', new Date());
+	(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
 
-	  gtag('config', 'UA-118897246-1');
+	ga('create', 'UA-118897246-1', 'auto');
+	ga('send', 'pageview');
 	</script>
 	<!-- End Google Analytics -->
 	<meta charset="UTF-8">
@@ -50,11 +50,11 @@
 		<nav class="menu-list hidden" id="menu_list">
 			<a href="javascript:void(0)" class="nav-big close_button close-menu"><i class="material-icons" id="close_menu_button">close</i></a>
 			<ul id="content_link_list">
-				<li class="close-menu"><a class="content-link" href="#intro">About me</a></li>
-				<li class="close-menu"><a class="content-link" href="#skills">my skills</a></li>
-				<li class="close-menu"><a class="content-link" href="#projects">my projects</a></li>
-				<li class="close-menu"><a class="content-link" href="#education">my education</a></li>
-				<li class="close-menu"><a class="content-link" href="#contacts">Contact me</a></li>
+				<li class="close-menu"><a class="content-link" href="#intro" onclick="ga('send', 'event', 'contacts', 'click')">About me</a></li>
+				<li class="close-menu"><a class="content-link" href="#skills" onclick="ga('send', 'event', 'contacts', 'click')">my skills</a></li>
+				<li class="close-menu"><a class="content-link" href="#projects" onclick="ga('send', 'event', 'contacts', 'click')">my projects</a></li>
+				<li class="close-menu"><a class="content-link" href="#education" onclick="ga('send', 'event', 'contacts', 'click')">my education</a></li>
+				<li class="close-menu"><a class="content-link" href="#contacts" onclick="ga('send', 'event', 'contacts', 'click')">Contact me</a></li>
 			</ul>
 		</nav>
 	</header>	
@@ -124,7 +124,7 @@
 						<p><i><strong>Features:</strong></i> This project is under development. The value of this game is the practice in Object Oriented Programming and development game logic.
 						</p>
 					</div>
-					<a href="https://leksorhayabusa.github.io/frontend-nanodegree-arcade-game/">
+					<a href="https://leksorhayabusa.github.io/frontend-nanodegree-arcade-game/"  onclick="ga('send', 'event', 'projects', 'click')">
 						<p class="get-bottom-padding get-centered">Udacity Arcade Game</p>
 						<img class="hr media-img-props media-img-hidden" src="images/arcade-game.png" alt="memory game">
 					</a>
@@ -135,7 +135,7 @@
 						<p><i><strong>Features:</strong></i> Added some CSS styles and programmed game logic with JavaScript ECMA 6 and Jquery, in one day CSS animation is going to be added. 
 						</p>
 					</div>
-					<a href="https://leksorhayabusa.github.io/fend-project-memory-game/">
+					<a href="https://leksorhayabusa.github.io/fend-project-memory-game/"  onclick="ga('send', 'event', 'projects', 'click')">
 						<p class="get-bottom-padding get-centered">Udacity Memory game</p>
 						<img class="hr media-img-props media-img-hidden" src="images/memory-game.png" alt="memory game">
 					</a>
@@ -143,7 +143,7 @@
 				<article>
 					<h3 class="img-appearance">Brighton-Times news page</h3>
 					<p><i><strong>Features:</strong></i> Brighton-Times news page modified to practice flexbox, layout and responsiveness.
-						<a href="https://leksorhayabusa.github.io/Brighton-Times/">
+						<a href="https://leksorhayabusa.github.io/Brighton-Times/" onclick="ga('send', 'event', 'projects', 'click')">
 							<p class="get-bottom-padding get-centered">Brighton-Times news page</p>
 								<img  class="hr media-img-props media-img-hidden" 
 									src="images/BT150-1x.jpg"
@@ -160,7 +160,7 @@
 					</p>
 				</article>
 				<article>
-					<h3 class="img-appearance">Outdoor Decals landing page</h3>
+					<h3 class="img-appearance"  onclick="ga('send', 'event', 'projects', 'click')">Outdoor Decals landing page</h3>
 					<div class="content-wrapper readmore-animation">
 						<p><i><strong>Features:</strong></i> landing page written with HTML and CSS, driven to be adaptive for screens with width upto 480px, provides simplicity (no animation, no JavaScript) and  supports old browsers. The page purpose is developed to inform about new store. 
 						</p>
@@ -197,7 +197,7 @@
 						<li>error handling.</li>
 					</ul>
 				</div>
-				<a href='javascript:void(0)' class="read-more readmore-modal ">Read more</a>
+				<a href='javascript:void(0)' class="read-more readmore-modal "  onclick="ga('send', 'event', 'projects', 'click')">Read more</a>
 					<a href="https://leksorhayabusa.github.io/FootballGame/fbgame_beta.html">
 						<p class="get-bottom-padding get-centered">Football game</p>
 					</a>
@@ -211,12 +211,12 @@
 							<div class="flex-item">
 								<h3>Recipient Google developer challenge scholarship</h3>
 								<p class="term"><i>Current</i></p>
-								<p class="get-bottom-padding">Udacity course: ‘Front-End Developer Nanodegree course’ <a href="https://eu.udacity.com/course/front-end-web-developer-nanodegree--nd001">link</a>. Duration 9 months (not 6 because it's Google Challenge course). Getting skills: advanced HTML5/CSS3, JS, jQuery, JS Testing with Jasmine, BackBone, Angular, Ember frameworks, Google Map API.</p>
+								<p class="get-bottom-padding">Udacity course: ‘Front-End Developer Nanodegree course’ <a href="https://eu.udacity.com/course/front-end-web-developer-nanodegree--nd001">link</a>. Duration 9 months. Getting skills: advanced HTML5/CSS3, JS, jQuery, JS Testing with Jasmine, BackBone, Angular, Ember frameworks, Google Map API.</p>
 							</div>
 							<div class="flex-item">
 								<h3>Discrete and boolean math courses</h3>
 								<p class="term"><i>Finished at 2016</i></p>
-								<p class="get-bottom-padding">120 hours fundamentals in discrete and boolean mathematics open lectures and practics in Kharkiv National University of Radio Electronics.</p>
+								<p class="get-bottom-padding">60 hours fundamentals in discrete and boolean mathematics open lectures and practics in Kharkiv National University of Radio Electronics.</p>
 							</div>
 							<div class="flex-item">
 							<h3>Master degree in the field: ‘Consolidated information’</h3>
@@ -238,12 +238,12 @@
 		<a id="footer_button" href='javascript:void(0)'>contact / hire me</a>
 		<nav class="footer-menu" id="footer_menu">
 			<ul>
-				<li><a href="https://github.com/LeksorHayabusa">Github</a></li>
+				<li><a href="https://github.com/LeksorHayabusa" onclick="ga('send', 'event', 'contacts', 'click')">Github</a></li>
 				<li><a href="www.linkedin.com/in/front-dev-nikonov
-">LinkedIn</a></li>
-				<li><a href="">UpWork</a></li>
-				<li><a href="tel:+48576639355">+48 576 639 355</a></li>
-				<li><a href="mailto:alexmotorniyg@gmail.com">alexmotorniyg@gmail.com</a></li>
+" onclick="ga('send', 'event', 'contacts', 'click')">LinkedIn</a></li>
+				<li><a href="" onclick="ga('send', 'event', 'contacts', 'click')">UpWork</a></li>
+				<li><a href="tel:+48576639355" onclick="ga('send', 'event', 'contacts', 'click')">+48 576 639 355</a></li>
+				<li><a href="mailto:alexmotorniyg@gmail.com" onclick="ga('send', 'event', 'contacts', 'click')">alexmotorniyg@gmail.com</a></li>
 				<li>Location: Gdansk, Poland</li>
 			</ul>
 			<div id="map_wrapper">

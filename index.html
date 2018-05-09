@@ -4,6 +4,7 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Web Dev profile</title>
+	<!-- Google Analytics -->
 	<script>
 		(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
 		(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
@@ -13,6 +14,7 @@
 		ga('create', 'UA-118897246-1', 'auto');
 		ga('send', 'pageview');
 	</script>
+	<!-- End Google Analytics -->
 	<link href="css/style.css" rel='stylesheet'>
 	<link href="https://fonts.googleapis.com/icon?family=Oxygen"
       rel="stylesheet"> 
@@ -48,11 +50,11 @@
 		<nav class="menu-list hidden" id="menu_list">
 			<a href="javascript:void(0)" class="nav-big close_button close-menu"><i class="material-icons" id="close_menu_button">close</i></a>
 			<ul id="content_link_list">
-				<li class="close-menu"><a class="content-link" href="#intro" onclick="ga('send', 'event', 'contacts', 'click')">About me</a></li>
-				<li class="close-menu"><a class="content-link" href="#skills" onclick="ga('send', 'event', 'contacts', 'click')">my skills</a></li>
-				<li class="close-menu"><a class="content-link" href="#projects" onclick="ga('send', 'event', 'contacts', 'click')">my projects</a></li>
-				<li class="close-menu"><a class="content-link" href="#education" onclick="ga('send', 'event', 'contacts', 'click')">my education</a></li>
-				<li class="close-menu"><a class="content-link" href="#contacts" onclick="ga('send', 'event', 'contacts', 'click')">Contact me</a></li>
+				<li class="close-menu"><a class="content-link" href="#intro">About me</a></li>
+				<li class="close-menu"><a class="content-link" href="#skills">my skills</a></li>
+				<li class="close-menu"><a class="content-link" href="#projects">my projects</a></li>
+				<li class="close-menu"><a class="content-link" href="#education">my education</a></li>
+				<li class="close-menu"><a class="content-link" href="#contacts">Contact me</a></li>
 			</ul>
 		</nav>
 	</header>	
@@ -77,11 +79,12 @@
 				<article>
 					<div class="content-wrapper readmore-animation">
 						<div class="skill-summary">
-							<div>HTML/HTML5</div>
-							<div>CSS/CSS3</div>
-							<div>JS OOP</div>
+							<div>JS ECMA6</div>
 							<div>jQuery</div>
 							<div>ChomeDevTool</div>
+							<div>OOP</div>
+							<div>HTML/HTML5</div>
+							<div>CSS/CSS3</div>
 							<div>UI/UX</div>
 							<div>UML</div>
 							<div>Photoshop</div>
@@ -105,11 +108,11 @@
 			<section class="content-5">
 				<h2>contacts</h2>
 				<ul class="contacts">
-					<li><a href="https://github.com/LeksorHayabusa">Github</a></li>
-					<li><a href="www.linkedin.com/in/front-dev-nikonov">LinkedIn</a></li>
-					<li><a href="">UpWork</a></li>
-					<li><a href="tel:+48576639355">+48 576 639 355</a></li>
-					<li><a href="mailto:alexmotorniyg@gmail.com">alexmotorniyg@gmail.com</a></li>
+					<li><a href="https://github.com/LeksorHayabusa" onclick="ga('send', 'event', 'contacts', 'click')">Github</a></li>
+					<li><a href="www.linkedin.com/in/front-dev-nikonov" onclick="ga('send', 'event', 'contacts', 'click')">LinkedIn</a></li>
+					<li><a href="" onclick="ga('send', 'event', 'contacts', 'click')">UpWork</a></li>
+					<li><a href="tel:+48576639355" onclick="ga('send', 'event', 'contacts', 'click')">+48 576 639 355</a></li>
+					<li><a href="mailto:alexmotorniyg@gmail.com" onclick="ga('send', 'event', 'contacts', 'click')">alexmotorniyg@gmail.com</a></li>
 				</ul>
 			</section>
 		</div>
